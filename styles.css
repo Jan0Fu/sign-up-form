@@ -78,11 +78,9 @@ input {
 }
 main > .signup {
     width: 660px;
-    height: calc(100vh - 517px);
+    height: calc(100vh - 537px);
     background-color: var(--back-color);
     display: flex;
-    margin-left: 3vw;
-    margin-bottom: 1rem;
     flex-direction: column;
 }
 .form {
@@ -114,20 +112,36 @@ main > .signup {
 .form-item > input:active {
     outline: 1px solid rgb(19, 94, 255);
 }
+input.error {
+    border: 1px solid red;
+}
+.error-message {
+    margin-top: 0;
+    font-size: 0.8rem;
+    color: red;
+}
+input:not(:focus):invalid,
+.error {
+  box-shadow: inset 0 -3px 0 0px rgb(182, 68, 68);
+} 
 .signup > button {
     border: none;
     border-radius: 5px;
     background-color: teal;
     width: 180px;
     height: 40px;
-    margin: 20px 0;
+    margin: 25px 0;
+    margin-left: 3vw;
     font-size: 0.9rem;
     color: #fff;
     font-weight: 700;
     cursor: pointer;
     box-shadow: var(--box-shadow);
 }
-.signup > a {
+.signup > p {
+    margin-left: 3vw
+}
+.signup > p > a {
     text-decoration: none;
     color: teal;
 }
