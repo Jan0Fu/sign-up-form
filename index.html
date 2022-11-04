@@ -12,13 +12,49 @@
         <img class="main-img" src="./image/pexels-pixabay-531880.jpg" alt="rainy street image"/>
         <div class="logo-container">
             <img class="logo" src="./image/logo.png" alt="odin logo"/>
+            <h1 class="logo-text">ODIN</h1>
         </div>
     </div>
-    <div class="main-para">
-        <p class="main-text">This is not a real online service! You know you need something
+    <main>
+        <div class="main-para">
+            <p class="main-text">This is not a real online service! You know you need something
             like this in your life to help you realize your deepest dreams.
             Sign up <em>now</em> to get started.</p>
-        <p class="main-subtext">You <em>know</em> you want to.</p>
-    </div>
+            <p class="main-subtext">You <em>know</em> you want to.</p>
+        </div>
+        <div class="form-container">
+            <form class="form">
+                <h3>Let's do this!</h3>
+                <div class="form-item">
+                    <label for="firstName">First name</label>
+                    <input type="text" name="first_name" id="firstName" required>
+                </div>
+                <div class="form-item">
+                    <label>Last name</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-item">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="form-item">
+                    <label>Phone number</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-item">
+                    <label>Password</label>
+                    <input type="password" required>
+                </div>
+                <div class="form-item">
+                    <label>Confirm password</label>
+                    <input type="password" required>
+                </div>
+            </form>
+        </div>
+        <div class="signup">
+            <button type="submit">Create Account</button>
+            <p>Already have an account?<a href="#"> Log in</a></p>
+        </div>
+    </main>
 </body>
 </html>
